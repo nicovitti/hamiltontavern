@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Hamilton Tavern</title>
+<link rel="stylesheet" href="stylesheets/skeleton.css">
+
+
+<link href='http://fonts.googleapis.com/css?family=Armata|Holtwood+One+SC' rel='stylesheet' type='text/css'>
+
+    <style type="text/css">
+    
+    .container {
+        margin-bottom: 20px;
+        }
+
+    .social {
+        margin-right: 0px;
+        margin-top: 15px;
+        margin-left: auto;
+        }
+    #facebook {
+        margin-right: 5px;
+        margin-left: 0px;
+        }
+
+    .brand {
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 0px;
+    }
+    
+    #location {
+	    font-size: 18px;
+        font-family: 'Armata', sans-serif;
+        line-height: 50%;
+    }
+    
+    .site-nav {
+        font-family: 'Holtwood One SC', serif;
+        font-size: 36px;
+        text-align: center;
+        padding: 0px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        }
+        
+    .site-nav li {
+	    display: inline-block;
+	    margin-left: 30px;
+    }
+    
+    .site-nav li:first-child {
+	    margin-left: 0px;
+    }
+    
+    .site-header {
+    	color: #545252;
+    	margin-left: auto;
+    	margin-right: auto;
+        margin-bottom: 50px;
+        }
+        
+    .photo-item {
+	    position: relative;
+	    display: inline-block;
+    } 
+    
+    .photo-item img {
+	    position: relative;
+	    z-index: 1;
+	    display: block;
+    }
+    
+    .photo-item:hover .photo-content {
+	    opacity: 1;
+    }
+    
+    .photo-item .photo-content {
+    	transition: opacity .3s ease-in;
+    	-webkit-transition: opacity .3s ease-in;
+		-moz-transition: opacity .3s ease-in;
+    	opacity: 0;
+	    position: absolute;
+	    top:0;
+	    left: 0;
+	    z-index: 10;
+	    width: 100%;
+	    height: 100%;
+	    background: rgba(255,255,255,0.35);
+    }
+    
+    .photo-item .photo-starburst {
+    	border-radius: 50%; /* remove when using starburst photo */
+    	position: absolute;
+    	top: 50%;
+    	left: 50%;
+    	width: 236px;
+    	height: 236px;
+    	margin: -118px 0 0 -118px;
+    	text-indent: -99999px;
+    	overflow: hidden;
+    	background-color: transparent;
+    	background-position: 0 center;
+    	background-repeat: no-repeat;
+	    
+    }
+    
+    #photo-burger .photo-starburst {
+	    background: transparent url('images/burger-night.png') center center no-repeat; /* set starburst background image */
+    }
+    
+    #photo-cake .photo-starburst {
+	    background-image: url('images/happy-hour1.png');
+    }
+
+    #photo-tacos .photo-starburst {
+	    background-image: url('images/happy-hour2.png');
+    }
+    
+    .about-content {
+        margin-bottom: 50px;
+        }
+    
+    .menu-content {
+        margin-bottom: 50px;
+        }
+    
+    .photos {
+        display: inline-block;
+		margin-left: auto;
+		margin-right: auto;
+    }
+    
+    #burger,#cake,#tacos {
+	    height: 315px;
+	    width: auto;
+    }
+    
+
+    #about-text {
+        font-family: 'Armata', sans-serif;
+        color: #545252;
+        line-height: 200%;
+        max-width: 50%;
+        text-align: center;
+        margin-left: 25%;
+        }
+    
+    ol, ul {
+		list-style: none;
+        }    
+    
+    .section {
+        color: #545252;
+        font-family: 'Holtwood One SC', serif;
+        }
+        
+    .items {
+	    color: #436844;
+        font-family: 'Armata', sans-serif;
+        margin-left: 25%;
+        line-height: 200%;
+    }
+    
+    .item-description {
+        color: #545252;
+        margin-left: 5%;
+        line-height: 18px;
+        font-size: 14px;
+        max-width: 65%;
+        }
+        
+    #sides {
+        color: #545252;
+        font-family: 'Armata', sans-serif;
+        font-size: 16px;
+        margin-top: 30px;
+        margin-left: 25%;
+        max-width: 50%;
+        }
+    
+    .review-quote {
+        font-family: 'Armata', sans-serif;
+        color: #436844;
+        line-height: 200%;
+        margin-bottom: 30px;
+        max-width: 85%;
+        }
+    
+    body {
+	    background-color: #f5b112;
+    }
+  
+    a {
+	    text-decoration: none;
+        color: #64A992;
+        display: inline;
+    }
+    
+    a:hover {
+        color: #545252;
+        }
+        
+    .reviews-1 {
+	    text-align: center;
+    }
+    
+    .reviews-2 {
+	    text-align: center;
+    }
+    
+    
+    .review a {
+	    font-family: 'Holtwood One SC', serif;
+	    color: #545252;
+    }
+    
+    .review a:hover {
+	    color: #64A992;
+    }
+    
+    h1,h2,h3,#location {
+	    text-align: center;
+    }
+    
+    .site-footer {
+	    color: #545252;
+	    margin-top: 50px;
+	    text-align: center;
+    }
+    
+    #google-map {
+    	margin-top: 80px;
+    	margin-bottom: 30px;
+    	width: 50%;
+    	border: 10px solid #64A992;
+    }
+    
+    </style>
+
+</head>
+
+
+<body>
+<div class="container">
+    
+     <!-- HEADER STARTS HERE --> 
+        <div class="site-header">
+    
+         <div class="social">
+            <a href="http://www.facebook.com/pages/Baltimore-MD/Hamilton-Tavern/48972018757"><img id="facebook" src="images/facebook.png"></a>
+            <a href="http://www.twitter.com/HamiltonTavern"><img id="twitter" src="images/twitter.png"></a>
+        </div>
+            
+        	<h1 class="brand" id="brand">
+					<img src="images/hamilton-logo.jpg" alt="Hamilton Tavern">
+        	</h1>
+        	
+        	<div id="location">
+        		<p>5517 Harford Rd</p>
+                <p>Baltimore, MD</p>
+                <p>401.123.4567</p>
+                <p>SUN-WED 4:30-10PM</p>
+                <p>THU-SAT 4:30-11PM</p>
+        	</div>
+        	
+        		<ul class="site-nav">
+        			
+        				<li><a href="#about" title="About">About</a></li>
+        				<li><a href="#menu" title="Menu">Menu</a></li>
+        				<li><a href="#reviews" title="Reviews">Reviews</a></li>
+                </ul>
+        	
+        	<div class="photos">
+        		<div class="photo-item" id="photo-burger">
+        			<img id="burger" src="images/burger.jpg">
+        			<div class="photo-content">
+        				<div class="photo-starburst">
+        					<h3>Monday Night Is Burger Night</h3>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="photo-item" id="photo-cake">
+        			<img id="cake" src="images/cake.jpg">
+        			<div class="photo-content">
+        				<div class="photo-starburst">
+        					<h3>Happy Hour</h3>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="photo-item" id="photo-tacos">
+        			<img id="burger" src="images/tacos.jpg">
+        			<div class="photo-content">
+        				<div class="photo-starburst">
+        					<h3>Late Night</h3>
+        				</div>
+        			</div>
+        		</div>
+            </div>
+        </div>
+        
+         <!-- HEADER ENDS HERE --> 
+         
+         
+         <!-- MAIN CONTENT STARTS HERE --> 
+    <div class="about-content">
+        <h2 class="header section" id="about">ABOUT</h2>
+            <p id="about-text">Hamilton Tavern is a homey eatery and neighborhood bar. We're known for our burgers but cook up yummy specials every day of the week. Stop in and see what we're all about!</p>
+    </div>
+    
+    <div class="menu-content">
+        <h2 class="header section" id="menu">MENU</h2>
+        
+            <h3 class="section" id="munchies">Munchies</h3>
+                <ul class="items">
+                	<li>$8 Boh Battered O's</li>
+                    <li class="item-description">with spicy garlic sauce</li>
+					<li>$6 Fried Dill Pickle Chips</li>
+                    <li class="item-description">with zippy goat cheese sauce</li>
+					<li>$8 Savory Peach Tart</li>
+                    <li class="item-description">carmelized onions & shallots, fresh peaches & honeyed walnuts with whipped goat cheese, & basil pistou</li>
+					<li>$8 Tavern "Tot"chos</li>
+                    <li class="item-description">house-made, with cheddar-pepperjack cheese sauce, smoked pickled jalepenos, lime sour cream, & pico de gallo</li>
+					<li>$12 Steamed Mussels</li>
+                    <li class="item-description">with coconut milk, ginger, lime, Sriracha, cilantro, & pickled peppers</li>
+					<li>$11 Steamed Shrimp (half pound)</li>
+                    <li class="item-description">with onions, corn on the cob, & cocktail sauce</li>
+                </ul>
+        
+            <h3 class="section" id="entrees">Salads, Sandwiches, & Hot Plates</h3>
+                <ul class="items">
+                	<li>$7 House Salad</li>
+                    <li class="item-description">with carrots, zucchini, red onions, & roasted garlic vinaigrette</li>
+					<li>$8 Cherry Tomato and Watermelon Salad</li>
+                    <li class="item-description">with crumbled feta cheese, arugula, & cumin-mint yogurt drizzle</li>
+					<li>$12 Mediterranean Grilled Chicken Salad</li>
+                    <li class="item-description">with roasted eggplant, olives, tomato, cucumber, red onion & house greens, & tossed with dilly lemon vinaigrette</li>
+					<li>$9 Thai Peanut Cold Noodle Salad</li>
+                    <li class="item-description">with warm Sriracha glazed tofu, shiitake mushrooms, sugar snap peas, & cilantro, topped with Nappa cabbage, peppers, summer squash, & drizzled with 5 spice vinaigrette</li>
+					<li>$11 Spicy Pork Belly Banh Mi</li>
+                    <li class="item-description">with lime cabbage & carrots, cilantro, & Sriracha lime aioli on toasted baguette</li>
+					<li>$11 Crispy Fried Fish Sandwich</li>
+                    <li class="item-description">with lettuce, tomato, cucumber & pickled garlic scape & horseradish rose sauce on toasted kaiser</li>
+                    <li>$11 House-Made Veggie Burger</li>
+                    <li class="item-description">with arugula, red onion, & smoked tomato aioli</li>
+					<li>$12 Crosstown Burger</li>
+                    <li class="item-description">Roseda Farms beef, shredded iceberg lettuce, onion, & horseradish cheddar. Add sticky-spicy bacon or a fried egg for $1. Add both for $2.</li>
+					<li>$15 Cherry Wood Smoked and Roasted Pork Shoulder</li>
+                    <li class="item-description">Bourbon peach BBQ sauce, southern style braised greens, & 3 bean veggie salad</li>
+                </ul>
+        
+            <h3 class="section" id="sides">
+            <p>All sandwiches served with house chips or hand cut fries. Substitute boh battered o's, broccoli salad, smoked jalapeno potato salad, or house salad for $1.</p>
+            <p>Menu is seasonal and subject to change.</p>
+            </h3>
+            
+            
+        </div>
+    <!-- MAIN CONTENT ENDS HERE --> 
+    
+    
+    <!-- REVIEW CONTENT STARTS HERE --> 
+
+        <h2 class="header section" id="reviews">REVIEWS</h2>
+        <div class="reviews-1 review eight columns">
+            <a href="http://www.baltimoresun.com/entertainment/bal-al.restrev28sep28,0,1020085.story" title="Large Review" class=" author">Elizabeth Large, Baltimore Sun:</a>
+            	<p class="review-quote">And what a burger it is, cooked as ordered with the right balance of well-seasoned beef and sesame-seed bun. The cheddar melts into every cranny of the beef...</p>
+            <a href="http://www.baltimoresun.com/entertainment/bal-li.scenecol18sep18,0,142826.column" class=" author">Sam Sessa, Baltimore Sun:</a>
+            	<p class="review-quote">Hamilton Tavern is one of the city's warmest, most inviting new bars.</p>
+            <a href="http://www.baltimorestyle.com/index.php/style/epicure/" class=" author">Style Magazine:</a>
+            	<p class="review-quote"> fans come from far and wide for the juicy, all-organic Roseda Farm burger.</p>
+        </div>
+        <div class="reviews-2 review eight columns">
+            <a href="http://www.citypaper.com/digest.asp?id=16212"  class=" author">Mary Zajac, Baltimore City Paper:</a>
+            	<p class="review-quote">Calling all imbibers: Get thyselves to Harford Road...the Hamilton Tavern bodes well for Hamilton's renaissance stirrings.</p>
+            <a href="http://www.baltimoremagazine.net/article.asp?t=1&m=1&c=32&s=671&ai=77516%0D" class=" author">Jess Blumberg, Baltimore Magazine:</a>
+            	<p class="review-quote">that sense of sharing is very much alive in the down-to-earth, welcoming
+atmosphere at Hamilton's newest neighborhood establishment</p>
+            <a href="http://www.baltimoreexaminer.com/entertainment/36980794.html" class=" author">Christine Stutz, Baltimore Examiner:</a>
+            	<p class="review-quote">Warm atmosphere, good food make Hamilton Tavern a must...</p>
+        </div>
+		<!-- REVIEW CONTENT ENDS HERE --> 
+		
+		
+		<!-- FOOTER STARTS HERE --> 
+		
+		<div class="site-footer">
+		
+		<a href="https://maps.google.com/maps?q=Hamilton+Tavern,+5517+Harford+Road,+Baltimore,+MD&hl=en&sll=39.352599,-76.561037&sspn=0.007193,0.012757&oq=Hamilton+Tavern,+5517+Harford+Road,+Baltimore,+MD&t=m&z=17&iwloc=A" title="Click for directions!" target="_blank"> <img src="images/google-map.png" class="" id="google-map"> </a>
+		
+		<h3 class= "review-quote copyright">&copy; 2013</h3>
+		
+		</div>
+		
+		<!-- FOOTER ENDS HERE --> 
+</div>
+</body>
+
+</html>
